@@ -14,6 +14,11 @@ import matplotlib as plt
 
 def get_user_values():
 #get all required values from user
+    principal = float(input("Enter the initial amount of investment:"))
+    rate = float(input("Enter annual interest rate as a %:"))
+    frequency = float(input("Enter compounding frequency:"))
+    time = float(input("Enter time in years:"))
+    return principal, rate, frequency, time
 
 def calculate_compound_interest(principal, rate, frequency, time):
 #calculate the final amount as a function
