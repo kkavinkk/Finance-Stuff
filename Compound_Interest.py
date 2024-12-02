@@ -10,7 +10,7 @@ r = Annual Interest Rate
 n = Number of times interest is compounded each year
 t = time in years
 """
-import matplotlib as plt
+import matplotlib.pyplot as plt
 
 def get_user_values():
 #get all required values from user
@@ -32,7 +32,7 @@ def plot_growth(principal, rate, frequency, time):
 
     #plotting:
     plt.figure(figsize = (8,5))
-    plt.plot(years, amounts, marker="o", label="Investmebnt Growth")
+    plt.plot(years, amounts, marker="o", label="Investment Growth")
     plt.title("Compount Interest Growth For Your Investment")
     plt.xlabel("Years")
     plt.ylabel("Total Amount")
