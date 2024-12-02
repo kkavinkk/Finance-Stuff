@@ -42,6 +42,10 @@ def plot_growth(principal, rate, frequency, time):
 
 def main():
 #allows us to run the calculator
+    get_user_values() = principal, rate, frequency, time
+    final_amount = calculate_compound_interest(principal, rate, frequency, time)
+    interest_earned = final_amount - principal
+    
 
 if __name__ == "__main__":
     main()
