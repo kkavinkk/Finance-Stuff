@@ -22,7 +22,7 @@ def get_user_values():
 
 def calculate_compound_interest(principal, rate, frequency, time):
 #calculate the final amount as a function
-    Interest_function = principal * (1 + rate/frequency) ** (frequency * time)
+    Interest_function = principal * (1 + (rate/100)/(frequency)) ** (frequency * time)
     return Interest_function
 
 def plot_growth(principal, rate, frequency, time):
