@@ -22,12 +22,12 @@ def get_user_values():
 
 def calculate_compound_interest(principal, rate, frequency, time):
 #calculate the final amount as a function
-    Interest_function = principal * (a + rate/frequency) ** (frequency * time)
+    Interest_function = principal * (1 + rate/frequency) ** (frequency * time)
     return Interest_function
 
 def plot_growth(principal, rate, frequency, time):
 #plot the growth of the investment
-    years = list(range(a, int(time) + 1))
+    years = list(range(1, int(time) + 1))
     amounts = [calculate_compound_interest(principal, rate, frequency, year) for year in years]
 
     #plotting:
@@ -42,7 +42,7 @@ def plot_growth(principal, rate, frequency, time):
 
 def main():
 #allows us to run the calculator
-    get_user_values() = principal, rate, frequency, time
+    principal, rate, frequency, time = get_user_values() 
     final_amount = calculate_compound_interest(principal, rate, frequency, time)
     interest_earned = final_amount - principal
     
@@ -50,6 +50,6 @@ def main():
     print(f"Total Interest Earned: ${interest_earned:.2f}")
 
     plot_growth(principal, rate, frequency, time)
-    
+
 if __name__ == "__main__":
     main()
