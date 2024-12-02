@@ -46,6 +46,10 @@ def main():
     final_amount = calculate_compound_interest(principal, rate, frequency, time)
     interest_earned = final_amount - principal
     
+    print(f"\nFinal Amount: ${final_amount:.2f}")
+    print(f"Total Interest Earned: ${interest_earned:.2f}")
 
+    plot_growth(principal, rate, frequency, time)
+    
 if __name__ == "__main__":
     main()
